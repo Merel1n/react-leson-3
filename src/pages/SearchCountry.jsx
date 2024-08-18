@@ -1,4 +1,4 @@
-import { Container, SearchForm, Section } from 'components';
+import { Container, CountryList, SearchForm, Section } from 'components';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { fetchByRegion } from 'service/countryApi';
@@ -29,6 +29,7 @@ export const SearchCountry = () => {
     <Section>
       <Container>
         <SearchForm onSubmit={getRegion} />
+        <CountryList countries={countries} />
       </Container>
     </Section>
   );
