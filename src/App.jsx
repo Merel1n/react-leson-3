@@ -1,7 +1,7 @@
 import { Country } from 'pages/Country';
 import { Home } from 'pages/Home';
 import { SearchCountry } from 'pages/SearchCountry';
-import { Link, Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { Header } from './components';
 
 export const App = () => {
